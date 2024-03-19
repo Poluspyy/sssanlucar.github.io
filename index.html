@@ -25,7 +25,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_38b21ff4f25e07aa6db8a9ae983effa5 {
+                #map_fd300c2f8437ec87025c5f595d1d6c9e {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -39,14 +39,14 @@
 <body>
     
     
-            <div class="folium-map" id="map_38b21ff4f25e07aa6db8a9ae983effa5" ></div>
+            <div class="folium-map" id="map_fd300c2f8437ec87025c5f595d1d6c9e" ></div>
         
 </body>
 <script>
     
     
-            var map_38b21ff4f25e07aa6db8a9ae983effa5 = L.map(
-                "map_38b21ff4f25e07aa6db8a9ae983effa5",
+            var map_fd300c2f8437ec87025c5f595d1d6c9e = L.map(
+                "map_fd300c2f8437ec87025c5f595d1d6c9e",
                 {
                     center: [36.77746448537608, -6.351623842353525],
                     crs: L.CRS.EPSG3857,
@@ -60,13 +60,38 @@
 
         
     
-            var tile_layer_cac0d6767037160b6544ed9ea13d711c = L.tileLayer(
+            var tile_layer_099c07cd2e9b9444d8d944cf07ed2f28 = L.tileLayer(
                 "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
                 {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
             );
         
     
-            tile_layer_cac0d6767037160b6544ed9ea13d711c.addTo(map_38b21ff4f25e07aa6db8a9ae983effa5);
+            tile_layer_099c07cd2e9b9444d8d944cf07ed2f28.addTo(map_fd300c2f8437ec87025c5f595d1d6c9e);
         
+    
+            var marker_d0e309ce34e4ec32bee290285634dc83 = L.marker(
+                [36.772584022004644, -6.352867965267226],
+                {}
+            ).addTo(map_fd300c2f8437ec87025c5f595d1d6c9e);
+        
+    
+        var custom_icon_9e92f772f95e1cbefdddc25e6a742715 = L.icon({"iconAnchor": [30, 30], "iconSize": [30, 30], "iconUrl": "https://pbs.twimg.com/profile_images/1364646785009020928/asjT9ijb_400x400.jpg", "popupAnchor": [-5, -80], "shadowAnchor": [30, 30], "shadowSize": [30, 30]});
+        marker_d0e309ce34e4ec32bee290285634dc83.setIcon(custom_icon_9e92f772f95e1cbefdddc25e6a742715);
+        
+    
+        var popup_4a23f3308cb026494fcc0a091943b33b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8f33331ead2ea58e68d40007d4181b66 = $(`<div id="html_8f33331ead2ea58e68d40007d4181b66" style="width: 100.0%; height: 100.0%;">Prueba Hdad</div>`)[0];
+                popup_4a23f3308cb026494fcc0a091943b33b.setContent(html_8f33331ead2ea58e68d40007d4181b66);
+            
+        
+
+        marker_d0e309ce34e4ec32bee290285634dc83.bindPopup(popup_4a23f3308cb026494fcc0a091943b33b)
+        ;
+
+        
+    
 </script>
 </html>
