@@ -25,7 +25,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_1b53ed8d38e81e63a539821f8cda2297 {
+                #map_d98f937d3d07e964ba6e263c9a439a51 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -39,14 +39,14 @@
 <body>
     
     
-            <div class="folium-map" id="map_1b53ed8d38e81e63a539821f8cda2297" ></div>
+            <div class="folium-map" id="map_d98f937d3d07e964ba6e263c9a439a51" ></div>
         
 </body>
 <script>
     
     
-            var map_1b53ed8d38e81e63a539821f8cda2297 = L.map(
-                "map_1b53ed8d38e81e63a539821f8cda2297",
+            var map_d98f937d3d07e964ba6e263c9a439a51 = L.map(
+                "map_d98f937d3d07e964ba6e263c9a439a51",
                 {
                     center: [36.78449, -6.35364],
                     crs: L.CRS.EPSG3857,
@@ -60,114 +60,142 @@
 
         
     
-            var tile_layer_b692064214320c2f1a77b132acce8e88 = L.tileLayer(
+            var tile_layer_915635272a0c1bada958d1774ca37f56 = L.tileLayer(
                 "https://{s}.basemaps.cartocdn.com/rastertiles/voyager_labels_under/{z}/{x}/{y}{r}.png",
-                {"attribution": "@pablo_ng98 @isidrong_ | 21/03/2024-16:50", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+                {"attribution": "@pablo_ng98 @isidrong_ | 21/03/2024-16:55", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
             );
         
     
-            tile_layer_b692064214320c2f1a77b132acce8e88.addTo(map_1b53ed8d38e81e63a539821f8cda2297);
+            tile_layer_915635272a0c1bada958d1774ca37f56.addTo(map_d98f937d3d07e964ba6e263c9a439a51);
         
     
-            var marker_2466c7c0b3e57ab14f3db9e6205c210a = L.marker(
-                [36.7746506073296, -6.35258482125007],
+            var poly_line_ba83450dc0a1d653fd2782a1d78a318c = L.polyline(
+                [[36.77517, -6.35247], [36.77488, -6.35293], [36.77583, -6.35339]],
+                {"bubblingMouseEvents": true, "color": " #2874A6", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": " #2874A6", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d98f937d3d07e964ba6e263c9a439a51);
+        
+    
+            poly_line_ba83450dc0a1d653fd2782a1d78a318c.bindTooltip(
+                `<div>
+                     Carrera Oficial - Plaza de la Paz
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_0a6de60797fa95af27a4860d04e6a3ce = L.polyline(
+                [[36.77813, -6.35503], [36.77945, -6.35216]],
+                {"bubblingMouseEvents": true, "color": " #2874A6", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": " #2874A6", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d98f937d3d07e964ba6e263c9a439a51);
+        
+    
+            poly_line_0a6de60797fa95af27a4860d04e6a3ce.bindTooltip(
+                `<div>
+                     Carrera Oficial - Calle Ancha
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f545a9d4c5cea4603f111f7262a24cb4 = L.marker(
+                [36.7748897567911, -6.3522658011785],
                 {}
-            ).addTo(map_1b53ed8d38e81e63a539821f8cda2297);
+            ).addTo(map_d98f937d3d07e964ba6e263c9a439a51);
         
     
-        var custom_icon_9ed3fb12d0b4b147db689855c4bbbde9 = L.icon({"iconSize": [50, 50], "iconUrl": "https://i.postimg.cc/6qzZddkc/13701-removebg-preview.png", "popupAnchor": [0, -25]});
-        marker_2466c7c0b3e57ab14f3db9e6205c210a.setIcon(custom_icon_9ed3fb12d0b4b147db689855c4bbbde9);
+        var custom_icon_98d9db5b382f35fc7e8ac902e61fb5d6 = L.icon({"iconSize": [50, 50], "iconUrl": "https://i.postimg.cc/6qzZddkc/13701-removebg-preview.png", "popupAnchor": [0, -25]});
+        marker_f545a9d4c5cea4603f111f7262a24cb4.setIcon(custom_icon_98d9db5b382f35fc7e8ac902e61fb5d6);
         
     
-        var popup_8ab7ffd84b1c453f77008bb691f07e7a = L.popup({"maxWidth": 100});
+        var popup_0f0bec7e3baaab2fa08688cce09da7fc = L.popup({"maxWidth": 100});
 
         
             
-                marker_2466c7c0b3e57ab14f3db9e6205c210a.once('click', function() {
-                    popup_8ab7ffd84b1c453f77008bb691f07e7a.setContent($(`<div id="html_b4f9aec8cc01f20bcd21ef90d2f6c68b" style="width: 100.0%; height: 100.0%;">                 <h6><p style = "text-align: center;"><b>Borriquita</b></h6>                 <p style = "text-align: center;">(Cruz de guía)</p>                 </div>`)[0]);
+                marker_f545a9d4c5cea4603f111f7262a24cb4.once('click', function() {
+                    popup_0f0bec7e3baaab2fa08688cce09da7fc.setContent($(`<div id="html_326563f11d19f197010160f42cd87da5" style="width: 100.0%; height: 100.0%;">                 <h6><p style = "text-align: center;"><b>Borriquita</b></h6>                 <p style = "text-align: center;">(Cruz de guía)</p>                 </div>`)[0]);
                 });
             
         
 
-        marker_2466c7c0b3e57ab14f3db9e6205c210a.bindPopup(popup_8ab7ffd84b1c453f77008bb691f07e7a)
+        marker_f545a9d4c5cea4603f111f7262a24cb4.bindPopup(popup_0f0bec7e3baaab2fa08688cce09da7fc)
         ;
 
         
     
     
-            var marker_910ff60849694bea18d8c0ce88753443 = L.marker(
-                [36.7739809296811, -6.35243964049091],
+            var marker_7e6113eb15b3f01663b66b7cabc9d736 = L.marker(
+                [36.7741239281372, -6.3526955025232],
                 {}
-            ).addTo(map_1b53ed8d38e81e63a539821f8cda2297);
+            ).addTo(map_d98f937d3d07e964ba6e263c9a439a51);
         
     
-        var custom_icon_b4e309bd77b5ab398b69abaac0aaf188 = L.icon({"iconSize": [50, 50], "iconUrl": "https://i.postimg.cc/6qzZddkc/13701-removebg-preview.png", "popupAnchor": [0, -25]});
-        marker_910ff60849694bea18d8c0ce88753443.setIcon(custom_icon_b4e309bd77b5ab398b69abaac0aaf188);
+        var custom_icon_71c9cfa5cd244d3d57e154dac728a228 = L.icon({"iconSize": [50, 50], "iconUrl": "https://i.postimg.cc/6qzZddkc/13701-removebg-preview.png", "popupAnchor": [0, -25]});
+        marker_7e6113eb15b3f01663b66b7cabc9d736.setIcon(custom_icon_71c9cfa5cd244d3d57e154dac728a228);
         
     
-        var popup_7c4e8f937908138f479b21ae7bb40c6d = L.popup({"maxWidth": 100});
+        var popup_c9bc9f945e6d1f3a2ab296e4797095b4 = L.popup({"maxWidth": 100});
 
         
             
-                marker_910ff60849694bea18d8c0ce88753443.once('click', function() {
-                    popup_7c4e8f937908138f479b21ae7bb40c6d.setContent($(`<div id="html_4c2ca6157cf039e784e36e7ee5d6494b" style="width: 100.0%; height: 100.0%;">                 <h6><p style = "text-align: center;"><b>Borriquita</b></h6>                 <p style = "text-align: center;">(Paso de palio)</p>                 </div>`)[0]);
+                marker_7e6113eb15b3f01663b66b7cabc9d736.once('click', function() {
+                    popup_c9bc9f945e6d1f3a2ab296e4797095b4.setContent($(`<div id="html_ef753cc046e71e5e5ce0d96ee1d968bb" style="width: 100.0%; height: 100.0%;">                 <h6><p style = "text-align: center;"><b>Borriquita</b></h6>                 <p style = "text-align: center;">(Paso de palio)</p>                 </div>`)[0]);
                 });
             
         
 
-        marker_910ff60849694bea18d8c0ce88753443.bindPopup(popup_7c4e8f937908138f479b21ae7bb40c6d)
+        marker_7e6113eb15b3f01663b66b7cabc9d736.bindPopup(popup_c9bc9f945e6d1f3a2ab296e4797095b4)
         ;
 
         
     
     
-            var marker_a7be911e2989ed35656f0642f6240ef7 = L.marker(
-                [36.7819448775571, -6.3484831306153],
+            var marker_64c951624b4a736a9a9dd9468cce0ee2 = L.marker(
+                [36.7815230805957, -6.34903174867373],
                 {}
-            ).addTo(map_1b53ed8d38e81e63a539821f8cda2297);
+            ).addTo(map_d98f937d3d07e964ba6e263c9a439a51);
         
     
-        var custom_icon_73fb52af6ab00b6c2d3aab37a12af82c = L.icon({"iconSize": [50, 50], "iconUrl": "https://i.postimg.cc/T2cnM6Kb/13703-removebg-preview.png", "popupAnchor": [0, -25]});
-        marker_a7be911e2989ed35656f0642f6240ef7.setIcon(custom_icon_73fb52af6ab00b6c2d3aab37a12af82c);
+        var custom_icon_933eda5f5a6509f7488c47344e6cbceb = L.icon({"iconSize": [50, 50], "iconUrl": "https://i.postimg.cc/T2cnM6Kb/13703-removebg-preview.png", "popupAnchor": [0, -25]});
+        marker_64c951624b4a736a9a9dd9468cce0ee2.setIcon(custom_icon_933eda5f5a6509f7488c47344e6cbceb);
         
     
-        var popup_441cd494cb8d6aeca52c4120e0c3b038 = L.popup({"maxWidth": 100});
+        var popup_a0216e603bb8fac759c5fc12a50084df = L.popup({"maxWidth": 100});
 
         
             
-                marker_a7be911e2989ed35656f0642f6240ef7.once('click', function() {
-                    popup_441cd494cb8d6aeca52c4120e0c3b038.setContent($(`<div id="html_b9ad8bceb13d6a75271f30ab79805e20" style="width: 100.0%; height: 100.0%;">                 <h6><p style = "text-align: center;"><b>Cena</b></h6>                 <p style = "text-align: center;">(Cruz de guía)</p>                 </div>`)[0]);
+                marker_64c951624b4a736a9a9dd9468cce0ee2.once('click', function() {
+                    popup_a0216e603bb8fac759c5fc12a50084df.setContent($(`<div id="html_db3a670cb5e59872c2e11e41f2ff95e9" style="width: 100.0%; height: 100.0%;">                 <h6><p style = "text-align: center;"><b>Cena</b></h6>                 <p style = "text-align: center;">(Cruz de guía)</p>                 </div>`)[0]);
                 });
             
         
 
-        marker_a7be911e2989ed35656f0642f6240ef7.bindPopup(popup_441cd494cb8d6aeca52c4120e0c3b038)
+        marker_64c951624b4a736a9a9dd9468cce0ee2.bindPopup(popup_a0216e603bb8fac759c5fc12a50084df)
         ;
 
         
     
     
-            var marker_68ac5dfe9f927f9697451becccdd7c76 = L.marker(
-                [36.7839975563264, -6.34674128033366],
+            var marker_b47cdb431d3edd4b71ba3d040adfb98b = L.marker(
+                [36.783650830439, -6.34738432705902],
                 {}
-            ).addTo(map_1b53ed8d38e81e63a539821f8cda2297);
+            ).addTo(map_d98f937d3d07e964ba6e263c9a439a51);
         
     
-        var custom_icon_7367ecf0234e9b85a9462ef2541501dd = L.icon({"iconSize": [50, 50], "iconUrl": "https://i.postimg.cc/T2cnM6Kb/13703-removebg-preview.png", "popupAnchor": [0, -25]});
-        marker_68ac5dfe9f927f9697451becccdd7c76.setIcon(custom_icon_7367ecf0234e9b85a9462ef2541501dd);
+        var custom_icon_3b8b88a5a08ab52addebeae139c273a7 = L.icon({"iconSize": [50, 50], "iconUrl": "https://i.postimg.cc/T2cnM6Kb/13703-removebg-preview.png", "popupAnchor": [0, -25]});
+        marker_b47cdb431d3edd4b71ba3d040adfb98b.setIcon(custom_icon_3b8b88a5a08ab52addebeae139c273a7);
         
     
-        var popup_f9c3a81b76f886e2d9d8dea18ef8a8b8 = L.popup({"maxWidth": 100});
+        var popup_a3b0a114a8a2ca65d4b4bf2dfc373dae = L.popup({"maxWidth": 100});
 
         
             
-                marker_68ac5dfe9f927f9697451becccdd7c76.once('click', function() {
-                    popup_f9c3a81b76f886e2d9d8dea18ef8a8b8.setContent($(`<div id="html_254a021ae1530fd463ec7457490c63f8" style="width: 100.0%; height: 100.0%;">                 <h6><p style = "text-align: center;"><b>Cena</b></h6>                 <p style = "text-align: center;">(Paso de misterio)</p>                 </div>`)[0]);
+                marker_b47cdb431d3edd4b71ba3d040adfb98b.once('click', function() {
+                    popup_a3b0a114a8a2ca65d4b4bf2dfc373dae.setContent($(`<div id="html_18af1d3fb0a89d54967515bbd207f465" style="width: 100.0%; height: 100.0%;">                 <h6><p style = "text-align: center;"><b>Cena</b></h6>                 <p style = "text-align: center;">(Paso de misterio)</p>                 </div>`)[0]);
                 });
             
         
 
-        marker_68ac5dfe9f927f9697451becccdd7c76.bindPopup(popup_f9c3a81b76f886e2d9d8dea18ef8a8b8)
+        marker_b47cdb431d3edd4b71ba3d040adfb98b.bindPopup(popup_a3b0a114a8a2ca65d4b4bf2dfc373dae)
         ;
 
         
