@@ -25,7 +25,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_e9bd4e8f140127b231d953ccf1744378 {
+                #map_e7c3cfd93cf264605ee8cdcf32e44231 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -39,14 +39,14 @@
 <body>
     
     
-            <div class="folium-map" id="map_e9bd4e8f140127b231d953ccf1744378" ></div>
+            <div class="folium-map" id="map_e7c3cfd93cf264605ee8cdcf32e44231" ></div>
         
 </body>
 <script>
     
     
-            var map_e9bd4e8f140127b231d953ccf1744378 = L.map(
-                "map_e9bd4e8f140127b231d953ccf1744378",
+            var map_e7c3cfd93cf264605ee8cdcf32e44231 = L.map(
+                "map_e7c3cfd93cf264605ee8cdcf32e44231",
                 {
                     center: [36.78032, -6.35295],
                     crs: L.CRS.EPSG3857,
@@ -60,13 +60,39 @@
 
         
     
-            var tile_layer_016278fd029bb0b8a7b539344ebe4d1f = L.tileLayer(
+            var tile_layer_bd5f9898e9a0f9c57d3d3544a2e44d3c = L.tileLayer(
                 "https://{s}.basemaps.cartocdn.com/rastertiles/voyager_labels_under/{z}/{x}/{y}{r}.png",
-                {"attribution": "@pablo_ng98; 21/03/2024-13:25", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+                {"attribution": "@pablo_ng98; 21/03/2024-13:30", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
             );
         
     
-            tile_layer_016278fd029bb0b8a7b539344ebe4d1f.addTo(map_e9bd4e8f140127b231d953ccf1744378);
+            tile_layer_bd5f9898e9a0f9c57d3d3544a2e44d3c.addTo(map_e7c3cfd93cf264605ee8cdcf32e44231);
         
+    
+            var marker_a1c44eed5b642df6dd37b61b4ba6efab = L.marker(
+                [36.8011985, -6.335609108],
+                {}
+            ).addTo(map_e7c3cfd93cf264605ee8cdcf32e44231);
+        
+    
+        var custom_icon_35eb05506d285c51276cdf333548d65e = L.icon({"iconSize": [40, 40], "iconUrl": "https://i.postimg.cc/T2cnM6Kb/13703-removebg-preview.png", "popupAnchor": [0, -25]});
+        marker_a1c44eed5b642df6dd37b61b4ba6efab.setIcon(custom_icon_35eb05506d285c51276cdf333548d65e);
+        
+    
+        var popup_a4a38291028e0778795ed98fce480a7a = L.popup({"maxWidth": 100});
+
+        
+            
+                marker_a1c44eed5b642df6dd37b61b4ba6efab.once('click', function() {
+                    popup_a4a38291028e0778795ed98fce480a7a.setContent($(`<div id="html_b2bf51e906c56c0b628d95c06f4ccc45" style="width: 100.0%; height: 100.0%;">                 <h6><p style = "text-align: center;"><b>Cena</b></h6>                 <p style = "text-align: center;">(Cruz de guía)</p>                 </div>`)[0]);
+                });
+            
+        
+
+        marker_a1c44eed5b642df6dd37b61b4ba6efab.bindPopup(popup_a4a38291028e0778795ed98fce480a7a)
+        ;
+
+        
+    
 </script>
 </html>
