@@ -25,7 +25,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_ec94eaadb7d9549009f00d62dee74db9 {
+                #map_43a50f66108fafed16301503473a3000 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -39,14 +39,14 @@
 <body>
     
     
-            <div class="folium-map" id="map_ec94eaadb7d9549009f00d62dee74db9" ></div>
+            <div class="folium-map" id="map_43a50f66108fafed16301503473a3000" ></div>
         
 </body>
 <script>
     
     
-            var map_ec94eaadb7d9549009f00d62dee74db9 = L.map(
-                "map_ec94eaadb7d9549009f00d62dee74db9",
+            var map_43a50f66108fafed16301503473a3000 = L.map(
+                "map_43a50f66108fafed16301503473a3000",
                 {
                     center: [36.78032, -6.35295],
                     crs: L.CRS.EPSG3857,
@@ -60,13 +60,39 @@
 
         
     
-            var tile_layer_5cedc47a207a7314cbb53d2e8958319c = L.tileLayer(
+            var tile_layer_9227a893f565dd25188f47af276ee786 = L.tileLayer(
                 "https://{s}.basemaps.cartocdn.com/rastertiles/voyager_labels_under/{z}/{x}/{y}{r}.png",
-                {"attribution": "@pablo_ng98; 21/03/2024-12:10", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+                {"attribution": "@pablo_ng98; 21/03/2024-12:20", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
             );
         
     
-            tile_layer_5cedc47a207a7314cbb53d2e8958319c.addTo(map_ec94eaadb7d9549009f00d62dee74db9);
+            tile_layer_9227a893f565dd25188f47af276ee786.addTo(map_43a50f66108fafed16301503473a3000);
         
+    
+            var marker_8e7cdcdfb84a0b1d67e77a95a1336d40 = L.marker(
+                [36.7764507539313, -6.35113528991123],
+                {}
+            ).addTo(map_43a50f66108fafed16301503473a3000);
+        
+    
+        var custom_icon_4083c4c2aecddc3cdd4941d85dcc0225 = L.icon({"iconSize": [40, 40], "iconUrl": "https://i.postimg.cc/DzWcnY9T/13715-removebg-preview.png", "popupAnchor": [0, -25]});
+        marker_8e7cdcdfb84a0b1d67e77a95a1336d40.setIcon(custom_icon_4083c4c2aecddc3cdd4941d85dcc0225);
+        
+    
+        var popup_44c07e867843dc8877ea825ebc055671 = L.popup({"maxWidth": 100});
+
+        
+            
+                marker_8e7cdcdfb84a0b1d67e77a95a1336d40.once('click', function() {
+                    popup_44c07e867843dc8877ea825ebc055671.setContent($(`<div id="html_5268bef7c3f060b90bd8dcb0ad5022ab" style="width: 100.0%; height: 100.0%;">                 <h6><b>Exaltación</b></h6>                 <p style = "text-align: center;">(Paso de misterio)</p>                 </div>`)[0]);
+                });
+            
+        
+
+        marker_8e7cdcdfb84a0b1d67e77a95a1336d40.bindPopup(popup_44c07e867843dc8877ea825ebc055671)
+        ;
+
+        
+    
 </script>
 </html>
