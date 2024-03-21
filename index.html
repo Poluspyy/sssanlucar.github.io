@@ -25,7 +25,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_18849f8f8c83a83ac7597ae46840dffb {
+                #map_27e74f5c411f47c60276116d64cfe871 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -39,18 +39,18 @@
 <body>
     
     
-            <div class="folium-map" id="map_18849f8f8c83a83ac7597ae46840dffb" ></div>
+            <div class="folium-map" id="map_27e74f5c411f47c60276116d64cfe871" ></div>
         
 </body>
 <script>
     
     
-            var map_18849f8f8c83a83ac7597ae46840dffb = L.map(
-                "map_18849f8f8c83a83ac7597ae46840dffb",
+            var map_27e74f5c411f47c60276116d64cfe871 = L.map(
+                "map_27e74f5c411f47c60276116d64cfe871",
                 {
-                    center: [36.77746448537608, -6.351623842353525],
+                    center: [36.78032, -6.35295],
                     crs: L.CRS.EPSG3857,
-                    zoom: 15,
+                    zoom: 14,
                     zoomControl: true,
                     preferCanvas: false,
                 }
@@ -60,63 +60,13 @@
 
         
     
-            var tile_layer_7c768f8253adb3d50050d90f66fc323c = L.tileLayer(
-                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
-                {"attribution": "21/03/2024-00:20", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            var tile_layer_96385f4f865dea994d5bb980cce32a50 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/rastertiles/voyager_labels_under/{z}/{x}/{y}{r}.png",
+                {"attribution": "@pablo_ng98; 21/03/2024-12:05", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
             );
         
     
-            tile_layer_7c768f8253adb3d50050d90f66fc323c.addTo(map_18849f8f8c83a83ac7597ae46840dffb);
+            tile_layer_96385f4f865dea994d5bb980cce32a50.addTo(map_27e74f5c411f47c60276116d64cfe871);
         
-    
-            var marker_172df7c0d5b01faecdb18e42f23b553c = L.marker(
-                [36.7973895621182, -6.33721292069506],
-                {}
-            ).addTo(map_18849f8f8c83a83ac7597ae46840dffb);
-        
-    
-        var custom_icon_2dc546b2a9c728793e788e71996231e6 = L.icon({"iconAnchor": [30, 30], "iconSize": [30, 30], "iconUrl": "https://i.postimg.cc/T2cnM6Kb/13703-removebg-preview.png", "popupAnchor": [-5, -80], "shadowAnchor": [30, 30], "shadowSize": [30, 30]});
-        marker_172df7c0d5b01faecdb18e42f23b553c.setIcon(custom_icon_2dc546b2a9c728793e788e71996231e6);
-        
-    
-        var popup_885fc4e930f9dd3c1cb817fce864166d = L.popup({"maxWidth": "100%"});
-
-        
-            
-                var html_025e54df5acb7a8fefc1395f855908f6 = $(`<div id="html_025e54df5acb7a8fefc1395f855908f6" style="width: 100.0%; height: 100.0%;">Cena (Cruz de guía)</div>`)[0];
-                popup_885fc4e930f9dd3c1cb817fce864166d.setContent(html_025e54df5acb7a8fefc1395f855908f6);
-            
-        
-
-        marker_172df7c0d5b01faecdb18e42f23b553c.bindPopup(popup_885fc4e930f9dd3c1cb817fce864166d)
-        ;
-
-        
-    
-    
-            var marker_67ef7888f14cff95a35eff3494202e3d = L.marker(
-                [36.7942389229744, -6.33705534340704],
-                {}
-            ).addTo(map_18849f8f8c83a83ac7597ae46840dffb);
-        
-    
-        var custom_icon_86a8ef88dc460b92e67d79bd25f99807 = L.icon({"iconAnchor": [30, 30], "iconSize": [30, 30], "iconUrl": "https://i.postimg.cc/T2cnM6Kb/13703-removebg-preview.png", "popupAnchor": [-5, -80], "shadowAnchor": [30, 30], "shadowSize": [30, 30]});
-        marker_67ef7888f14cff95a35eff3494202e3d.setIcon(custom_icon_86a8ef88dc460b92e67d79bd25f99807);
-        
-    
-        var popup_82ebcbfbc908254030b4894ace6bdd6d = L.popup({"maxWidth": "100%"});
-
-        
-            
-                var html_dca5884cca6683a8e689f8bde32bda40 = $(`<div id="html_dca5884cca6683a8e689f8bde32bda40" style="width: 100.0%; height: 100.0%;">Cena (Último paso)</div>`)[0];
-                popup_82ebcbfbc908254030b4894ace6bdd6d.setContent(html_dca5884cca6683a8e689f8bde32bda40);
-            
-        
-
-        marker_67ef7888f14cff95a35eff3494202e3d.bindPopup(popup_82ebcbfbc908254030b4894ace6bdd6d)
-        ;
-
-        
-    
 </script>
 </html>
