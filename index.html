@@ -106,7 +106,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_d948d77663768089ad1ca7647bf5245f {
+                #map_b3f09dc2b9b093fb1a6eb8bbee1ebf7f {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -121,17 +121,20 @@
 <body>
     
     
+    <div style="position: fixed; top: 20px; left: 70px; width: auto; height: auto; background-color:white;border:2px solid grey; z-index: 900;">
+        <h5>  Pendiente de partes meteorológicos  </h5>
+    </div>
     <meta http-equiv="refresh" content="300">
     
     
-            <div class="folium-map" id="map_d948d77663768089ad1ca7647bf5245f" ></div>
+            <div class="folium-map" id="map_b3f09dc2b9b093fb1a6eb8bbee1ebf7f" ></div>
         
 </body>
 <script>
     
     
-            var map_d948d77663768089ad1ca7647bf5245f = L.map(
-                "map_d948d77663768089ad1ca7647bf5245f",
+            var map_b3f09dc2b9b093fb1a6eb8bbee1ebf7f = L.map(
+                "map_b3f09dc2b9b093fb1a6eb8bbee1ebf7f",
                 {
                     center: [36.775871284198246, -6.353200236926841],
                     crs: L.CRS.EPSG3857,
@@ -145,22 +148,22 @@
 
         
     
-            var tile_layer_c28612bb03167e160dcd75bc51b9af19 = L.tileLayer(
+            var tile_layer_4eddd07ccdad6859f1499583aa5c92b2 = L.tileLayer(
                 "https://{s}.basemaps.cartocdn.com/rastertiles/voyager_labels_under/{z}/{x}/{y}{r}.png",
-                {"attribution": "@pablo_ng98 @isidrong_ | 25/03/2024-17:45", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+                {"attribution": "@pablo_ng98 @isidrong_ | 25/03/2024-17:50", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
             );
         
     
-            tile_layer_c28612bb03167e160dcd75bc51b9af19.addTo(map_d948d77663768089ad1ca7647bf5245f);
+            tile_layer_4eddd07ccdad6859f1499583aa5c92b2.addTo(map_b3f09dc2b9b093fb1a6eb8bbee1ebf7f);
         
     
-            var poly_line_48eaa45a628adf04d78fe0a703c0e436 = L.polyline(
+            var poly_line_450b96d4c36678c5791e9f557c4dff7f = L.polyline(
                 [[36.775430045, -6.352014287], [36.77514294, -6.352474633], [36.774970275, -6.352758988], [36.77486534, -6.352924378], [36.775503403, -6.353238416], [36.775833181, -6.353389544], [36.77587188, -6.353210675], [36.775913106, -6.353229844], [36.775885159, -6.353346188], [36.776175999, -6.353466586], [36.776149699, -6.353544139], [36.775853945, -6.3534058], [36.775749242, -6.353902114]],
                 {"bubblingMouseEvents": true, "color": " #2874A6", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": " #2874A6", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
-            ).addTo(map_d948d77663768089ad1ca7647bf5245f);
+            ).addTo(map_b3f09dc2b9b093fb1a6eb8bbee1ebf7f);
         
     
-            poly_line_48eaa45a628adf04d78fe0a703c0e436.bindTooltip(
+            poly_line_450b96d4c36678c5791e9f557c4dff7f.bindTooltip(
                 `<div>
                      Carrera Oficial - Plaza de la Paz
                  </div>`,
@@ -168,13 +171,13 @@
             );
         
     
-            var poly_line_409ac3f30f0832dde5c2ae7ea4341044 = L.polyline(
+            var poly_line_c1769ef481f6c86894e32562e01d2e14 = L.polyline(
                 [[36.778150939, -6.355029923], [36.778698496, -6.353783418], [36.779432716, -6.352181243]],
                 {"bubblingMouseEvents": true, "color": " #2874A6", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": " #2874A6", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
-            ).addTo(map_d948d77663768089ad1ca7647bf5245f);
+            ).addTo(map_b3f09dc2b9b093fb1a6eb8bbee1ebf7f);
         
     
-            poly_line_409ac3f30f0832dde5c2ae7ea4341044.bindTooltip(
+            poly_line_c1769ef481f6c86894e32562e01d2e14.bindTooltip(
                 `<div>
                      Carrera Oficial - Calle Ancha
                  </div>`,
@@ -182,13 +185,13 @@
             );
         
     
-            ant_path_199b9c6cf87c08c1a3d662294d69308c = L.polyline.antPath(
+            ant_path_903919921bc54f9a53136f52316e1056 = L.polyline.antPath(
               [[36.777428589, -6.356593965], [36.777111229, -6.357297362], [36.776431173, -6.356786512], [36.7761287, -6.356576062], [36.775819293, -6.356240991], [36.775529824, -6.355936183], [36.775311415, -6.35572938], [36.775068341, -6.355528835], [36.774646071, -6.355313381], [36.774845531, -6.354721893], [36.774427715, -6.354393294], [36.774110726, -6.354161528], [36.774208834, -6.35381773], [36.774318689, -6.353390692], [36.774442847, -6.352897063], [36.774472348, -6.352867597], [36.774900114, -6.352249282], [36.77511489, -6.35210735], [36.775304954, -6.351868023], [36.775426817, -6.352015934], [36.77514294, -6.352474633], [36.774970275, -6.352758988], [36.77486534, -6.352924378], [36.775503403, -6.353238416], [36.775833181, -6.353389544], [36.77587188, -6.353210675], [36.775913106, -6.353229844], [36.775885159, -6.353346188], [36.776175999, -6.353466586], [36.776149699, -6.353544139], [36.775853945, -6.3534058], [36.775749242, -6.353902114], [36.776241544, -6.354269594], [36.776363631, -6.35434625], [36.776619073, -6.354485125], [36.776631206, -6.35448123], [36.776634571, -6.354467491], [36.776634635, -6.354441998], [36.776621638, -6.354253994], [36.776619806, -6.354124163], [36.776639445, -6.354025274], [36.776680645, -6.353929224], [36.776726576, -6.353868409], [36.776766403, -6.353843999], [36.776854188, -6.353841837], [36.777816174, -6.3539494], [36.777788638, -6.354070311], [36.777694949, -6.354335321], [36.777569724, -6.354762782], [36.778150939, -6.355029923], [36.778698496, -6.353783418], [36.779432716, -6.352181243], [36.779646954, -6.351703302], [36.77986702, -6.351253968], [36.779239339, -6.350858672], [36.779139352, -6.351093752], [36.779019961, -6.351282561], [36.778798665, -6.351583378], [36.778468271, -6.352194392], [36.778118647, -6.352917071], [36.777854433, -6.352705213], [36.777682553, -6.352599626], [36.777547427, -6.352948323], [36.777513534, -6.353034056], [36.777701446, -6.353385832], [36.777810334, -6.353641314], [36.777867404, -6.35365821], [36.777815818, -6.353953334], [36.77757453, -6.35476031], [36.777512077, -6.354758171], [36.777459766, -6.354786323], [36.777420243, -6.354853345], [36.777149279, -6.355387951], [36.776848292, -6.356016157], [36.776428823, -6.356786168], [36.777108097, -6.357297154], [36.77743065, -6.35659537]],
               {"bubblingMouseEvents": true, "color": "red", "dashArray": [30, 50], "dashOffset": null, "delay": 5000, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 3}
-        ).addTo(map_d948d77663768089ad1ca7647bf5245f);
+        ).addTo(map_b3f09dc2b9b093fb1a6eb8bbee1ebf7f);
         
     
-            ant_path_199b9c6cf87c08c1a3d662294d69308c.bindTooltip(
+            ant_path_903919921bc54f9a53136f52316e1056.bindTooltip(
                 `<div>
                      Pusillus
                  </div>`,
@@ -196,13 +199,13 @@
             );
         
     
-            ant_path_ad3ad782b58c0b5ecfdd6e13544d6434 = L.polyline.antPath(
+            ant_path_e1d33eefb1bc028df959e8d121e95db7 = L.polyline.antPath(
               [[36.774817358, -6.354549206], [36.77478782, -6.354647492], [36.774435345, -6.354399069], [36.774557595, -6.353869223], [36.774737763, -6.353097386], [36.774469584, -6.352863263], [36.774895595, -6.35225353], [36.775113891, -6.352108988], [36.775306548, -6.351869252], [36.775431039, -6.352013892], [36.77514294, -6.352474633], [36.774970275, -6.352758988], [36.77486534, -6.352924378], [36.775503403, -6.353238416], [36.775833181, -6.353389544], [36.77587188, -6.353210675], [36.775913106, -6.353229844], [36.775885159, -6.353346188], [36.776175999, -6.353466586], [36.776149699, -6.353544139], [36.775853945, -6.3534058], [36.775749242, -6.353902114], [36.775462856, -6.355191716], [36.775131769, -6.354923493], [36.774846491, -6.354723379], [36.774645045, -6.355316927], [36.775064396, -6.355531826], [36.775319924, -6.355736726], [36.775505381, -6.355910089], [36.775717114, -6.356129424], [36.775917449, -6.356348974], [36.776121935, -6.35657024], [36.77642911, -6.356787793], [36.776652855, -6.356359604], [36.776844108, -6.356010016], [36.777145044, -6.355386301], [36.777458756, -6.3547892], [36.777513915, -6.354759327], [36.77757392, -6.354762284], [36.778151109, -6.355030264], [36.778539395, -6.354145062], [36.779430229, -6.352186734], [36.779644786, -6.351706136], [36.779852681, -6.351247845], [36.779243074, -6.350869941], [36.778787053, -6.350622104], [36.778344722, -6.350413295], [36.778159775, -6.350349104], [36.778001931, -6.350291088], [36.777855564, -6.35022391], [36.777672775, -6.350128275], [36.777637998, -6.350360072], [36.777467049, -6.350702885], [36.777254474, -6.351097763], [36.77721914, -6.351137347], [36.777182476, -6.351162443], [36.77712788, -6.351161796], [36.776520268, -6.350902985], [36.776493209, -6.351006247], [36.776301586, -6.35160106], [36.776155138, -6.352018178], [36.776011285, -6.352575474], [36.775847026, -6.353390895], [36.775508954, -6.353239681], [36.775439799, -6.353476105], [36.775163449, -6.353432688], [36.775111765, -6.353399299], [36.774740925, -6.353097877], [36.774463296, -6.35286587], [36.774156164, -6.352589943], [36.773950745, -6.353171441], [36.773742796, -6.353878739], [36.774113071, -6.35416844], [36.774436633, -6.354398363], [36.774790059, -6.354655458], [36.774816498, -6.354551671]],
               {"bubblingMouseEvents": true, "color": "green", "dashArray": [30, 50], "dashOffset": null, "delay": 5000, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 3}
-        ).addTo(map_d948d77663768089ad1ca7647bf5245f);
+        ).addTo(map_b3f09dc2b9b093fb1a6eb8bbee1ebf7f);
         
     
-            ant_path_ad3ad782b58c0b5ecfdd6e13544d6434.bindTooltip(
+            ant_path_e1d33eefb1bc028df959e8d121e95db7.bindTooltip(
                 `<div>
                      Cañita
                  </div>`,
@@ -210,27 +213,27 @@
             );
         
     
-            var marker_26f07f0224a3239b6c1bbe9296b64371 = L.marker(
-                [36.777428589, -6.356593965],
+            var marker_28808a964c0e0f6ef477b06960f2b294 = L.marker(
+                [36.7772146515417, -6.35706813618215],
                 {}
-            ).addTo(map_d948d77663768089ad1ca7647bf5245f);
+            ).addTo(map_b3f09dc2b9b093fb1a6eb8bbee1ebf7f);
         
     
-        var custom_icon_4dfa676758fd0c5621b74042159c4c76 = L.icon({"iconSize": [50, 50], "iconUrl": "https://i.postimg.cc/XJfdvMxT/13704-removebg-preview.png", "popupAnchor": [0, -25]});
-        marker_26f07f0224a3239b6c1bbe9296b64371.setIcon(custom_icon_4dfa676758fd0c5621b74042159c4c76);
+        var custom_icon_101ead75ca68ab7382b4d1248c47d278 = L.icon({"iconSize": [50, 50], "iconUrl": "https://i.postimg.cc/XJfdvMxT/13704-removebg-preview.png", "popupAnchor": [0, -25]});
+        marker_28808a964c0e0f6ef477b06960f2b294.setIcon(custom_icon_101ead75ca68ab7382b4d1248c47d278);
         
     
-        var popup_e3de7ff26fd85d5eb2003aa97e6bfb87 = L.popup({"maxWidth": 100});
+        var popup_cc850bdfc2aaebb66ed7b6912dc82774 = L.popup({"maxWidth": 100});
 
         
             
-                marker_26f07f0224a3239b6c1bbe9296b64371.once('click', function() {
-                    popup_e3de7ff26fd85d5eb2003aa97e6bfb87.setContent($(`<div id="html_f308c0470edb09a911c3b54eddfa6abf" style="width: 100.0%; height: 100.0%;">                 <h6><p style = "text-align: center;"><b>Pusillus Grex</b></h6>                 <p style = "text-align: center;">(Cruz de guía)</p>                 </div>`)[0]);
+                marker_28808a964c0e0f6ef477b06960f2b294.once('click', function() {
+                    popup_cc850bdfc2aaebb66ed7b6912dc82774.setContent($(`<div id="html_3635f6a951626006d65d033ea9e7189d" style="width: 100.0%; height: 100.0%;">                 <h6><p style = "text-align: center;"><b>Pusillus Grex</b></h6>                 <p style = "text-align: center;">(Cruz de guía)</p>                 </div>`)[0]);
                 });
             
         
 
-        marker_26f07f0224a3239b6c1bbe9296b64371.bindPopup(popup_e3de7ff26fd85d5eb2003aa97e6bfb87)
+        marker_28808a964c0e0f6ef477b06960f2b294.bindPopup(popup_cc850bdfc2aaebb66ed7b6912dc82774)
         ;
 
         
